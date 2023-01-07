@@ -1,0 +1,18 @@
+// .proto de tipo Client.
+syntax = "proto3";
+
+// Variables tipo Client.
+message Client
+{
+   uint32 type_id_client            = 1;  // Tipo de Id del Cliente.
+   string name_of_client            = 2;  // Nombre del Cliente.
+   string cellphone_of_client       = 3;  // Celular numero del Cliente.
+   string email_of_client           = 4;  // Correo del Cliente.
+   repeated string clients_details  = 5;  // Array de lista de Clientes, para ver sus detalles.
+}
+
+// Metodo ClienteId
+message ClienteId
+{
+  string client_id = 1;
+}

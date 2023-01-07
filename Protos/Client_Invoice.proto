@@ -1,0 +1,19 @@
+// .proto de tipo Invoice.
+syntax = "proto3";
+
+
+// Variables tipo Invoice.
+message Invoice
+{
+   string ref_to_product            = 1;  // Referencia del Producto.
+   int32  discount_of_product       = 2;  // Descuento del Producto.
+   int32  amount_of_product         = 3;  // Cantidad de Productos.
+   int32  total_to_pay              = 4;  // Total a Pagar.
+   repeated string invoice_details  = 5;  // Array de lista de Invoice, para ver sus detalles.
+}
+
+// Metodo InvoiceId
+message InvoiceId
+{
+  string invoice_id = 1;
+}
