@@ -1,0 +1,18 @@
+// InvoiceDetails.proto
+syntax = "proto3";
+
+// Importar referencia a Producto.
+import "models/Products.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Tipos de Datos InvoiceDetails.
+message InvoiceDetails
+{
+   uint32 id_invoice                               = 1;  // Tipo de Id de Factura.
+   string name_invoice                             = 2;  // Nombre de Factura.
+   string dir_invoice                              = 3;  // Dir de Factura.
+   TestApiGrpc.Protos.models.Product ref_product   = 4;  // Referencia a Producto.
+   repeated string invoice_details                 = 5;  // Array de lista de Facture, para ver sus detalles.
+}

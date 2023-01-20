@@ -1,0 +1,14 @@
+// Products.proto
+syntax = "proto3";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Tipos de Datos Product.
+message Product
+{
+   string id_product                = 1;    // Tipo de Id del Producto.
+   string name_product              = 2;    // Nombre del Producto.
+   int32  price_product             = 3;    // Precio del producto.  
+   repeated string product_details  = 4;    // Array de lista de Productos, para ver sus detalles.   
+}

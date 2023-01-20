@@ -1,0 +1,11 @@
+# ninja log v5
+11	1750	1673727971593876900	CMakeFiles/TEST_API_GRPC.dir/Sources/server_init.cpp.o	6e23ec79a053c638
+133	11376	1673729402758797200	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos_services/model_services/InvoiceDetailsService.grpc.pb.cc.o	980001da1e322be8
+1850	2148	1673727972000142100	TEST_API_GRPC	53ef93d3cde831e7
+103	6227	1673729397594194300	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos/models/Products.pb.cc.o	485de2b8b9475158
+91	6416	1673729397663562900	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos/models/Client.pb.cc.o	c88c248590887aca
+126	6559	1673729397692610000	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos/models/InvoiceDetails.pb.cc.o	503ff5e30e74159b
+116	6487	1673729397597691600	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos/models/Invoices.pb.cc.o	301e7eda69a0d5de
+111	11044	1673729402419723100	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos_services/model_services/ProductsService.grpc.pb.cc.o	133774c3ae5c15d3
+95	11216	1673729402594357100	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos_services/model_services/ClientService.grpc.pb.cc.o	df683b318b10780
+119	11461	1673729402834122400	CMakeFiles/TEST_API_GRPC.dir/Protos/generated_protos_services/model_services/InvoicesService.grpc.pb.cc.o	a95224a89ea91106

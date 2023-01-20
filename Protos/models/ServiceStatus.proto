@@ -1,0 +1,12 @@
+// ServiceStatus.proto
+syntax = "proto3";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Servicios Estado del Servidor.
+message ServiceStatus
+{
+  bool   is_success    = 1;
+  string error_message = 2;
+}

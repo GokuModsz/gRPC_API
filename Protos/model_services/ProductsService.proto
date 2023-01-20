@@ -1,0 +1,27 @@
+// ProductsService.proto
+syntax = "proto3";
+
+// Importar atributos de Productos.
+import "models/Products.proto";
+
+// Importar el Estado del Servidor.
+import "models/ServiceStatus.proto";
+
+// Importar archivo empty.proto
+import "google/protobuf/empty.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Servicio ProductsService.
+service ProductsService
+{
+  rpc CreateProducts(TestApiGrpc.Protos.models.Product) returns (TestApiGrpc.Protos.models.ServiceStatus) {}
+  rpc ListProducts(google.protobuf.Empty) returns (ListProductsResponse) {}
+}
+
+// Mensaje para Listar Productos
+message ListProductsResponse
+{
+  repeated TestApiGrpc.Protos.models.Product product = 1;
+}

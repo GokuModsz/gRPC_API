@@ -1,0 +1,27 @@
+// InvoicesService.proto
+syntax = "proto3";
+
+// Importar atributos de Invoice.
+import "models/Invoices.proto";
+
+// Importar el Estado del Servidor.
+import "models/ServiceStatus.proto";
+
+// Importar archivo empty.proto
+import "google/protobuf/empty.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Servicio InvoicesService.
+service InvoicesService
+{
+  rpc CreateInvoices(TestApiGrpc.Protos.models.Invoices) returns (TestApiGrpc.Protos.models.ServiceStatus) {}
+  rpc ListInvoices(google.protobuf.Empty) returns (ListInvoicesResponse) {}
+}
+
+// Mensaje para Listar Invoices
+message ListInvoicesResponse
+{
+  repeated TestApiGrpc.Protos.models.Invoices invoice = 1;
+}

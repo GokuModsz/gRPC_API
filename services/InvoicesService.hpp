@@ -1,0 +1,10 @@
+#ifndef F055AC89_9C16_4909_9DAC_431675620D03
+#define F055AC89_9C16_4909_9DAC_431675620D03
+
+// Clase InvoicesService
+class InvoicesService
+{
+};
+
+
+#endif /* F055AC89_9C16_4909_9DAC_431675620D03 */

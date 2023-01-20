@@ -1,0 +1,18 @@
+// Invoices.proto
+syntax = "proto3";
+
+// Importar Cliente.proto para referencia a cliente.
+import "models/Client.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Tipos de Datos Invoices.
+message Invoices
+{   
+   TestApiGrpc.Protos.models.Client ref_client         = 1;  // Referencia del Cliente.
+   int32  discount_product                             = 2;  // Descuento del Producto.
+   int32  amount_product                               = 3;  // Cantidad de Productos.
+   int32  total_pay                                    = 4;  // Total a Pagar.
+   repeated string invoice_details                     = 5;  // Array de lista de Invoice, para ver sus detalles.
+}

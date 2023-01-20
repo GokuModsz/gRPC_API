@@ -1,0 +1,15 @@
+// Client.proto
+syntax = "proto3";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Tipos de Datos Client.
+message Client
+{
+   uint32 id_client                 = 1;  // Id del Cliente.
+   string name_client               = 2;  // Nombre del Cliente.
+   string cellphone_client          = 3;  // Celular numero del Cliente.
+   string email_client              = 4;  // Correo del Cliente.
+   repeated string clients_details  = 5;  // Array de lista de Clientes, para ver sus detalles.
+}

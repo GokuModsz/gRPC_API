@@ -1,0 +1,27 @@
+// InvoiceDetailsService.proto
+syntax = "proto3";
+
+// Importar atributos de InvoiceDetails.
+import "models/InvoiceDetails.proto";
+
+// Importar el Estado del Servidor.
+import "models/ServiceStatus.proto";
+
+// Importar archivo empty.proto
+import "google/protobuf/empty.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Servicio InvoiceDetailsService.
+service InvoiceDetailsService
+{
+  rpc CreateInvoiceDetails(TestApiGrpc.Protos.models.InvoiceDetails) returns (TestApiGrpc.Protos.models.ServiceStatus) {}
+  rpc ListInvoiceDetails(google.protobuf.Empty) returns (ListInvoiceDetailsResponse) {}
+}
+
+// Mensaje para Listar Factura con detalles.
+message ListInvoiceDetailsResponse
+{
+  repeated TestApiGrpc.Protos.models.InvoiceDetails invoicedetails = 1;
+}

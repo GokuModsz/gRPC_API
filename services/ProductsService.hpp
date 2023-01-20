@@ -1,0 +1,10 @@
+#ifndef D203F512_2AD0_4C30_B112_8A059CA97233
+#define D203F512_2AD0_4C30_B112_8A059CA97233
+
+// Clase ProductsService
+class ProductsService
+{
+};
+
+
+#endif /* D203F512_2AD0_4C30_B112_8A059CA97233 */

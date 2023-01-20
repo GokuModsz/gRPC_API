@@ -1,0 +1,27 @@
+// ClientService.proto
+syntax = "proto3";
+
+// Importar atributos de Cliente.
+import "models/Client.proto";
+
+// Importar el Estado del Servidor.
+import "models/ServiceStatus.proto";
+
+// Importar archivo empty.proto
+import "google/protobuf/empty.proto";
+
+// namespace a usar.
+package TestApiGrpc.Protos.models;
+
+// Servicio ClientService.
+service ClientService
+{
+  rpc CreateClient(TestApiGrpc.Protos.models.Client) returns (TestApiGrpc.Protos.models.ServiceStatus) {}
+  rpc ListClient(google.protobuf.Empty) returns (ListClientResponse) {}
+}
+
+// Mensaje para Listar Clientes
+message ListClientResponse
+{
+  repeated TestApiGrpc.Protos.models.Client client = 1;
+}
