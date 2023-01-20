@@ -1,3 +1,0 @@
-/workspaces/TEST_API_GRPC/build/CMakeFiles/TEST_API_GRPC.dir
-/workspaces/TEST_API_GRPC/build/CMakeFiles/edit_cache.dir
-/workspaces/TEST_API_GRPC/build/CMakeFiles/rebuild_cache.dir
